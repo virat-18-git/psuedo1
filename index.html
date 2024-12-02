@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #div1{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+           }
+        #previous{
+            border: 2px solid black;
+            background-color: lightgreen;
+            border-radius: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+           
+
+        }
+        #search{
+            display: flex;
+            flex-wrap: wrap;
+            }
+            #next{
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid;
+            background-color: lightgreen;
+            border-radius: 20px;
+           
+             
+            }
+        /* .c1:hover{
+
+            
+
+        } */
+      .c1 {
+        border: 5px solid violet;
+        height: 100px;
+        width: 150px;
+        margin-top: -200px;
+        margin-left: 200px;
+        
+        }
+       .c{
+        
+       border: 2px solid ;
+        background-color: rgba(128, 128, 128, 0.345);
+        height:250px;
+        width: max-content;
+
+       }
+       .c2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+       }
+       .c3{
+        border:2px solid green;
+        background-color: lightgreen;
+        border-radius: 20px;
+        width: max-content;
+        margin-top: -30px;
+        
+       }
+     
+       
+      #scaleX:checked ~ .c1 {
+        transform: scaleX(0.5);
+      }
+      #scaleY:checked ~ .c1 {
+        transform: scaleY(2);
+      }
+      #scale:checked ~ .c1 {
+        transform: scale(1, 2.5);
+      }
+      #rotateX:checked ~ .c1 {
+        transform: rotateX(45deg);
+      }
+      #rotateY:checked ~ .c1{
+        transform: rotateY(50deg);
+      }
+      #rotate:checked ~ .c1 {
+        transform: rotate(90deg, 90deg);
+      }
+       #translateX:checked ~ .c1{
+        transform: translateX(100px);
+      }
+      #translateY:checked ~ .c1 {
+        transform: translateY(100px);
+      }
+      #translate:checked ~ .c1 {
+        transform: translate(150px,150px);
+      }
+      #skewX:checked ~ .c1 {
+        transform: skewX(25deg);
+      }
+      #skewY:checked ~ .c1 {
+        transform: skewY(25deg);
+      }
+      #skew:checked ~ .c1 {
+        transform: skew(25deg, 25deg);
+      }
+
+    </style>
+  </head>
+  <body>
+    
+        <h1>CSS Transform</h1>
+    <div id="div1">
+        <div id="previous">
+            <h3>< Previous</h3></div>
+       <div id="search">
+        <input type="text" placeholder="search">
+       </div>
+    <div id="next">
+        <h3>next ></h3>
+</div>
+    </div>
+    <div id="div2">
+        <p>Demo of the different values of the transform property.</p>
+        <p>Click the property values below to see the result:</p>
+    </div>
+    <div class="c">
+    <input type="radio" id="scaleX" name="psuedo" />scaleX<br />
+    <input type="radio" id="scaleY" name="psuedo" />scaleY<br />
+    <input type="radio" id="scale" name="psuedo" />scale<br />
+    <input type="radio" id="rotateX" name="psuedo" />rotateX<br />
+    <input type="radio" id="rotateY" name="psuedo" />rotateY<br />
+    <input type="radio" id="rotate" name="psuedo" />rotate<br />
+    <input type="radio" id="translateX" name="psuedo" />translateX<br />
+    <input type="radio" id="translateY" name="psuedo" />translateY<br />
+    <input type="radio" id="translate" name="psuedo" />translate<br />
+    <input type="radio" id="skewX" name="psuedo" />skewX<br />
+    <input type="radio" id="skewY" name="psuedo" />skewY<br />
+    <input type="radio" id="skew" name="psuedo" />skew<br />
+
+    <div class="c1">CSS:TRANSFORMS</div>
+</div><br><br><br><br>
+<div class="c2">
+    <p1>Play more with the code in our Tryit yourself editor:</p1>
+    <div class="c3">
+        <h2>Try it yourself ></h2>
+    </div>
+</footer>
+   
+  </body>
+</html>
